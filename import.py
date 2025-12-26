@@ -1,9 +1,11 @@
 import os
 from dotenv import load_dotenv
 
-from langchain.text_splitter import CharacterTextSplitter
+from langchain_core.prompts import PromptTemplate
+from langchain_openai import OpenAI
+from langchain_text_splitters import CharacterTextSplitter
 from langchain_community.vectorstores import FAISS
-from langchain_community.embeddings import OpenAIEmbeddings
+from langchain_openai import OpenAIEmbeddings
 
 load_dotenv()
 
